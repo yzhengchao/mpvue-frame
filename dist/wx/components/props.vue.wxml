@@ -1,0 +1,6 @@
+<template name="6991dcfc">
+  <view class="_div data-v-cdb6cfc4 props-test">
+    <view class="_div data-v-cdb6cfc4 props-test-item" wx:key="index" key="{{index}}" wx:for="{{dataArray}}" wx:for-index="index" wx:for-item="item">{{item.name}}--------{{item.age}}</view>
+    <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_div data-v-cdb6cfc4">change props data!</view>
+  </view>
+</template>

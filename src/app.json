@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/center/main",
+    "pages/couter/main",
+    "pages/tree/main",
+    "pages/cart/main",
+    "pages/auth/main",
+    "pages/detail/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "myapp",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "selectedColor": "#D53333",
+    "color": "#4d4d4d",
+    "list":[
+      {
+        "pagePath": "pages/index/main",
+        "iconPath": "/static/tabs/home-nomal.png",
+        "selectedIconPath": "/static/tabs/home-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tree/main",
+        "iconPath": "/static/tabs/tree-nomal.png",
+        "selectedIconPath": "/static/tabs/tree-selected.png",
+        "text": "摇钱树"
+      },
+      {
+        "pagePath": "pages/cart/main",
+        "iconPath": "/static/tabs/cart-nomal.png",
+        "selectedIconPath": "/static/tabs/cart-selected.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/center/main",
+        "iconPath": "/static/tabs/center-nomal.png",
+        "selectedIconPath": "/static/tabs/center-selected.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

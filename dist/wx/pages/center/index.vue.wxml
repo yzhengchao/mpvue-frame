@@ -1,0 +1,3 @@
+<template name="7efe488e">
+  <view class="_view data-v-f0b6cfac">{{msg}}</view>
+</template>

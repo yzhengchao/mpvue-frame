@@ -1,0 +1,11 @@
+
+.props-test.data-v-cdb6cfc4 {
+  width: 100%;
+  margin-top: 100rpx;
+}
+.props-test .props-test-item.data-v-cdb6cfc4 {
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+}

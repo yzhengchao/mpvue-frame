@@ -1,0 +1,6 @@
+<import src="/components/click-counter.vue.wxml" /><template name="2ea0f271">
+  <view class="_div data-v-3747420d wraper">
+    <view class="_div data-v-3747420d msg">{{msg}}</view> <template bindchangeParent="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="570dad6e"></template>
+    <view class="_div data-v-3747420d methodsTest" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> showToast </view>
+  </view>
+</template>

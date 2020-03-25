@@ -1,0 +1,12 @@
+<template name="570dad6e">
+  <view class="_div data-v-dd975836 counter">
+    <view class="_div data-v-dd975836 num">当前数量:{{num}}</view>
+    <view class="_div data-v-dd975836 btn-list">
+      <view class="_div data-v-dd975836 add btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">add+</view>
+      <view class="_div data-v-dd975836 reduce btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">reduce-</view>
+      <view class="_div data-v-dd975836 reset btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">reset</view>
+      <view class="_div data-v-dd975836 parent btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">parent</view>
+    </view>
+    <view class="_div data-v-dd975836 text-stylus"></view>
+  </view>
+</template>

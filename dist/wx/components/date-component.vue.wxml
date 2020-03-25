@@ -1,0 +1,5 @@
+<template name="d04fc608">
+  <view class="_div data-v-728245e0 dateComponent">
+    <view class="_div data-v-728245e0 day-item {{[  item.isFirstDay === true ? 'check-in-day' : '',  item.isEndDay === true ? 'check-out-day' : '',  item.ischeckd === true ? 'choose-date' : '']}}" bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{daysArray.days}}" wx:for-index="index" wx:for-item="item" style=" {{('margin-left:' + item.marginleft + ';')}}"><label wx:if="{{item.full===true}}" class="_span data-v-728245e0 red">满房</label><label wx:else class="_span data-v-728245e0">{{index+1}}</label> <label wx:if="{{item.afterToday==true && item.isFirstDay!=true && item.isEndDay!=true}}" class="_span data-v-728245e0">{{item.price}}</label><label wx:elif="{{item.afterToday==true && item.isFirstDay==true}}" class="_span data-v-728245e0">入住</label><label wx:elif="{{item.afterToday==true && item.isEndDay==true}}" class="_span data-v-728245e0">退房</label></view>
+  </view>
+</template>

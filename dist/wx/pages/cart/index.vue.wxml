@@ -1,0 +1,8 @@
+<import src="/components/props.vue.wxml" /><template name="45057519">
+  <view class="_div data-v-12f2fbb5 cart">
+    <view class="_div data-v-12f2fbb5 cart-dom">demo</view>
+    <view class="_div data-v-12f2fbb5 btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">click me!</view>
+    <view class="_view data-v-12f2fbb5" style=" {{('color:' + activeColor + ';')}}">view color</view>
+    <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-12f2fbb5">go couter</view> <template data="{{...$root[$kk+'0'], $root}}" is="6991dcfc"></template>
+  </view>
+</template>

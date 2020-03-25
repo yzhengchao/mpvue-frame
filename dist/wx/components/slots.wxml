@@ -1,0 +1,2 @@
+<import src="/components/click-counter.vue.wxml" />
+<import src="/components/props.vue.wxml" />

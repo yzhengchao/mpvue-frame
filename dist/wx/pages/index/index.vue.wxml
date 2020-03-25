@@ -1,0 +1,72 @@
+<template name="6526924f">
+  <view class="_view data-v-54e9df33 container">
+    <view class="_view data-v-54e9df33 scroll-top">
+      <scroll-view class="_scroll-view data-v-54e9df33 scroll-view_hot" scroll-x="true">
+        <view class="_view data-v-54e9df33 scroll-view_hot-item {{[currentCategory.id == item.id ? 'scroll-view_hot-item-active' : '']}}" bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{navList}}" wx:for-index="index" wx:for-item="item">{{item.name}}</view>
+      </scroll-view>
+    </view>
+    <swiper class="_swiper data-v-54e9df33 banner" circular="true" indicator-dots="true" autoplay="true" indicator-active-color="#fff" interval="3000" duration="1000">
+      <swiper-item class="_swiper-item data-v-54e9df33 index-swiper-item" wx:key="index" key="{{index}}" wx:for="{{banner}}" wx:for-index="index" wx:for-item="item">
+        <navigator class="_navigator data-v-54e9df33 swiper-item-navigator">
+          <image src="{{item.image_url}}" background-size="cover" class="_image data-v-54e9df33"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+    <view class="_view data-v-54e9df33 hr-bg"></view>
+    <view class="_view data-v-54e9df33 classification">
+      <view class="_view data-v-54e9df33 classification-list">
+        <navigator class="_navigator data-v-54e9df33 classification-list-url youfei">
+          <image src="../../../static/images/postage.png" class="_image data-v-54e9df33"></image>
+          <view class="_view data-v-54e9df33">付邮得物</view>
+        </navigator>
+      </view>
+      <view class="_view data-v-54e9df33 classification-list">
+        <navigator class="_navigator data-v-54e9df33 classification-list-url youfei">
+          <image src="../../../static/images/wish.png" class="_image data-v-54e9df33"></image>
+          <view class="_view data-v-54e9df33">愿望清单</view>
+        </navigator>
+      </view>
+      <view class="_view data-v-54e9df33 classification-list">
+        <navigator class="_navigator data-v-54e9df33 classification-list-url youfei">
+          <image src="../../../static/images/draw.png" class="_image data-v-54e9df33"></image>
+          <view class="_view data-v-54e9df33">0元抽奖</view>
+        </navigator>
+      </view>
+      <view class="_view data-v-54e9df33 classification-list">
+        <navigator class="_navigator data-v-54e9df33 classification-list-url youfei">
+          <image src="../../../static/images/gold-icon.png" class="_image data-v-54e9df33"></image>
+          <view class="_view data-v-54e9df33">金币专区</view>
+        </navigator>
+      </view>
+      <view class="_view data-v-54e9df33 classification-list">
+        <view class="_view data-v-54e9df33 classification-list-url youfei" bindtap="handleProxy" data-order="21" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+          <image src="/static/images/search.png" class="_img data-v-54e9df33"></image>
+          <view class="_view data-v-54e9df33">商品搜索</view>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-54e9df33 hot-goods">
+      <view class="_view data-v-54e9df33 hot-goods-title">
+        <view class="_view data-v-54e9df33 hot-goods-title-left">
+          <image src="../../../static/images/hot-goods.png" class="_image data-v-54e9df33"></image> <text class="_text data-v-54e9df33">热卖商品</text>
+        </view>
+      </view>
+      <view class="_view data-v-54e9df33 hot-goods-content">
+        <view class="_view data-v-54e9df33 hot-goods-content-item" wx:key="index" key="{{index}}" wx:for="{{hotGoods}}" wx:for-index="index" wx:for-item="item">
+          <navigator url="{{'../detail/main?id='+item.id}}" class="_navigator data-v-54e9df33 hot-goods-content-item-url">
+            <image src="{{item.list_pic_url}}" class="_image data-v-54e9df33"></image>
+            <view class="_view data-v-54e9df33 hot-goods-content-item-info">
+              <view class="_view data-v-54e9df33 hot-goods-content-item-name">{{item.name}}</view>
+              <view class="_view data-v-54e9df33 vip-back"><text class="_text data-v-54e9df33 vip-back-left">返利:￥{{item.rebate_price}}</text> <text class="_text data-v-54e9df33 vip-back-right">+ ￥{{item.sub_rebate_price}}(会员)</text></view>
+              <view class="_view data-v-54e9df33 sale-num">
+                <view class="_view data-v-54e9df33 sale-num-left">￥{{item.retail_price}}</view>
+                <view class="_view data-v-54e9df33 sale-num-right">已售:{{item.sell_volume}}</view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-54e9df33 query-test" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">click me</view>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<template name="38314da1">
+  <view class="_div data-v-061ed43d auth">
+    <view class="_view data-v-061ed43d hd">
+      <image class="_image data-v-061ed43d logo" src="../../../static/images/logo1.png"></image>
+      <view class="_view data-v-061ed43d title">有点东西</view>
+    </view>
+    <view class="_view data-v-061ed43d bd">
+      <view class="_view data-v-061ed43d top_line"></view> <text class="_text data-v-061ed43d m_name">有点东西申请获得以下权限</text> <text class="_text data-v-061ed43d s_name">· 获得你的公开信息（昵称、头像等）</text>
+    </view>
+    <view class="_view data-v-061ed43d btn spacing"><button wx:if="{{canIUse}}" open-type="getUserInfo" class="_button data-v-061ed43d weui_btn weui_btn_primary" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">授权登录</button></view>
+  </view>
+</template>

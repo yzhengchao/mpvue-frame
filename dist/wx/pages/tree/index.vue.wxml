@@ -1,0 +1,39 @@
+<template name="03f12fd2">
+  <view class="_div data-v-6816229a tree">
+    <view class="_div data-v-6816229a choose-date" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">选择日期1</view>
+    <view class="_div data-v-6816229a {{[popupVisible ? 'zan-dialog-show' : '']}}">
+      <view class="_div data-v-6816229a popup" wx:if="{{popupVisible}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+      <view class="_div data-v-6816229a popup-wraper service-popup-wraper">
+        <view class="_div data-v-6816229a po-rela">
+          <view class="_div data-v-6816229a popup-fixed-title">
+            <view class="_div data-v-6816229a blue" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">关闭</view>
+            <view class="_div data-v-6816229a">日期选择</view>
+            <view class="_div data-v-6816229a blue" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">清空</view>
+          </view>
+          <view class="_div data-v-6816229a popup-fixed-dateNum">
+            <view class="_div data-v-6816229a ruzhu-date"><label class="_span data-v-6816229a">入住时间</label>
+              <view class="_p data-v-6816229a checkInTime">{{checkInTime}}</view>
+            </view>
+            <view class="_div data-v-6816229a date-num"> 共<label class="_span data-v-6816229a">{{num}}</label>晚 </view>
+            <view class="_div data-v-6816229a tuifang-date"><label class="_span data-v-6816229a">退房时间</label>
+              <view class="_p data-v-6816229a checkOutTime">{{checkOutTime}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-6816229a weekday">
+            <view class="_div data-v-6816229a weekday-item" wx:key="item" key="{{item}}" wx:for="{{weekday}}" wx:for-index="index" wx:for-item="item">{{item}}</view>
+          </view>
+          <view class="_div data-v-6816229a dateArray-wrapper">
+            <view wx:key="index" key="{{index}}" wx:for="{{dateArray}}" wx:for-index="index" wx:for-item="item" class="_div data-v-6816229a">
+              <view class="_p data-v-6816229a dateArray-wrapper-month">{{item.month}}</view>
+              <view class="_div data-v-6816229a days-content">
+                <view class="_div data-v-6816229a days-item {{[  child.isFirstDay === true ? 'check-in-day' : '',  child.isEndDay === true ? 'check-out-day' : '',  child.ischeckd === true ? 'choose-date-day' : '']}}" wx:key="childIndex" key="{{childIndex}}" bindtap="handleProxy" data-eventid="{{'4_'+index+'-'+childIndex}}" data-comkey="{{$k}}" wx:for="{{item.days}}" wx:for-index="childIndex" wx:for-item="child" style=" {{('margin-left:' + child.marginleft + ';')}}"><label wx:if="{{child.full===true && child.afterToday==true}}" class="_span data-v-6816229a red">满房</label><label wx:else class="_span data-v-6816229a {{[child.afterToday == true ? 'is-afterToday' : 'not-afterToday']}}">{{childIndex+1}}</label> <label wx:if="{{child.afterToday==true && child.isFirstDay!=true && child.isEndDay!=true}}" class="_span data-v-6816229a span-day-price">￥{{child.price}}</label><label wx:elif="{{child.afterToday==true && child.isFirstDay==true}}" class="_span data-v-6816229a">入住</label><label wx:elif="{{child.afterToday==true && child.isEndDay==true}}" class="_span data-v-6816229a">退房</label></view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-6816229a ebooking" wx:if="{{btnVisiby}}" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">{{yuding}}</view>
+          <view class="_div data-v-6816229a ebooking-error" wx:if="{{!btnVisiby}}">{{errorText}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
